@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm unicom.m3u -fr
+
 # 下载 unicom.m3u 文件
 curl -o unicom.m3u https://raw.githubusercontent.com/chilinha/tv/refs/heads/main/unicom.m3u
 
