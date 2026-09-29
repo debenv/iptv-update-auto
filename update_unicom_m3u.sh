@@ -11,4 +11,10 @@ sed -i 's|rtp://|http://192.168.33.3:4022/udp/|g' unicom.m3u
 # 将 logo 路径替换
 sed -i 's|https://gitee.com/chilinha/mytv/raw/master/|http://192.168.33.90:58418/tv/tvlogo/raw/branch/master/|g' unicom.m3u
 
+# 追加 bilitv 点播频道
+cat >> unicom.m3u <<'EOF'
+#EXTINF:-1 tvg-name="bilitv" group-title="点播频道",bilitv
+rtsp://192.168.33.90:58554/
+EOF
+
 echo "处理完成，文件已保存为 unicom.m3u"
