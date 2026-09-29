@@ -14,7 +14,7 @@ sed -i 's|https://gitee.com/chilinha/mytv/raw/master/|http://192.168.33.90:58418
 # 追加 bilitv 点播频道
 cat >> unicom.m3u <<'EOF'
 #EXTINF:-1 tvg-name="bilitv" group-title="点播频道",bilitv
-rtsp://192.168.33.90:58554/
+http://192.168.33.90:58554/
 EOF
 
 echo "处理完成，文件已保存为 unicom.m3u"
